@@ -1,24 +1,39 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import GenericFunctions from "./components/GenericFunctions";
+import { GenericFruitsFromEnumDropdown } from "./components/GenericTypes";
+import {
+  FruitsFromEnumDropdown,
+  FruitsFromObjectDropdown,
+  FormStatus,
+} from "./components/HardcodedStrings";
+import UsersPage from "./components/RawDataNames";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <FruitsFromEnumDropdown />
+      <br />
+      <br />
+      <FruitsFromObjectDropdown />
+      <br />
+      <br />
+      <FormStatus />
+      <br />
+      <br />
+      <br />
+      <br />
+      <UsersPage />
+      <br />
+      <br />
+      <br />
+      <br />
+      <GenericFruitsFromEnumDropdown />
+      <br />
+      <br />
+      <br />
+      <br />
+      <GenericFunctions />
     </div>
   );
 }
