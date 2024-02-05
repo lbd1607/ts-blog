@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import ExplicitPropTypes from "./components/ExplicitPropTypes";
 import GenericFunctions from "./components/GenericFunctions";
 import { GenericFruitsFromEnumDropdown } from "./components/GenericTypes";
 import {
@@ -8,6 +9,7 @@ import {
   FormStatus,
 } from "./components/HardcodedStrings";
 import UsersPage from "./components/RawDataNames";
+import TypingFnProps from "./components/TypingFnProps";
 
 function App() {
   return (
@@ -34,6 +36,16 @@ function App() {
       <br />
       <br />
       <GenericFunctions />
+      <br />
+      <br />
+      <br />
+      <br />
+      <ExplicitPropTypes />
+      <br />
+      <br />
+      <br />
+      <br />
+      <TypingFnProps />
     </div>
   );
 }
