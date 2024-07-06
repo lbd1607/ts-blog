@@ -1,5 +1,5 @@
 import React from "react";
-import { ValueOf } from "../utils/types";
+import { ValueOf } from "../utils/reusableTypes";
 
 enum Fruits {
   APPLE = "Apple",
@@ -25,6 +25,9 @@ export const GenericFruitsFromEnumDropdown = () => {
       setSelectedFruit(selectedOption?.value);
     }
   };
+
+  //Using ValueOf allows us to perform comparisons with enum values
+  console.log(selectedFruit === Fruits.APPLE);
 
   return (
     <>
